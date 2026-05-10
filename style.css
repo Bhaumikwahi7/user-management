@@ -1,0 +1,171 @@
+/* RESET DEFAULT BROWSER SETTINGS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}/*ths help in having a basic default aligment inside the page*/
+
+/* BODY STYLING */
+body{
+    font-family: 'Poppins', sans-serif;
+
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(
+        135deg,
+        #1e3c72,
+        #2a5298
+    );
+}
+
+/* MAIN CONTAINER */
+.container{
+    width: 800px;
+    height: 550px;
+
+    background: white;
+
+    border-radius: 20px;
+
+    display: flex;
+
+    overflow: hidden;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+/* LEFT PANEL */
+.left-panel{
+    flex: 1;
+
+    background: linear-gradient(
+        135deg,
+        #141e30,
+        #243b55
+    );
+
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 40px;
+}
+
+/* LEFT PANEL HEADING */
+.left-panel h1{
+    font-size: 38px;
+
+    margin-bottom: 20px;
+
+    text-align: center;
+}
+
+/* LEFT PANEL PARAGRAPH */
+.left-panel p{
+    text-align: center;
+
+    opacity: 0.8;
+
+    line-height: 1.6;
+}
+
+/* RIGHT PANEL */
+.right-panel{
+    flex: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #f5f7fa;
+}
+
+/* FORM BOX */
+.form-box{
+    width: 80%;
+}
+
+/* REGISTER HEADING */
+.form-box h2{
+    text-align: center;
+
+    margin-bottom: 25px;
+
+    color: #243b55;
+}
+
+/* FORM STYLING */
+#registerForm{
+    display: flex;
+    flex-direction: column;
+
+    gap: 18px;
+}
+
+/* INPUTS + SELECT */
+input,
+select{
+    padding: 14px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 10px;
+
+    font-size: 15px;
+
+    outline: none;
+
+    transition: 0.3s;
+}
+
+/* INPUT FOCUS EFFECT */
+input:focus,
+select:focus{
+    border-color: #2a5298;
+
+    box-shadow: 0 0 8px rgba(42,82,152,0.3);
+}
+
+/* BUTTON */
+button{
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #2a5298;
+
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+/* BUTTON HOVER */
+button:hover{
+    background: #1e3c72;
+
+    transform: translateY(-2px);
+}
+
+/* MESSAGE BOX */
+#message{
+    margin-top: 20px;
+
+    text-align: center;
+
+    font-weight: 500;
+
+    color: red;
+}
